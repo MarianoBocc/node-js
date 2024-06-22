@@ -1,15 +1,14 @@
-//ASYNC AWAIT
-//Para q funcione hay q cambiar la extensión a 'mjs'
-//para q se pueda modularizar
-
+// ASYNC AWAIT
+// Para q funcione hay q cambiar la extensión a 'mjs'
+// para q se pueda modularizar
 
 import { readFile } from 'node:fs/promises'
 
 console.log('Leyendo el primer archivo...')
-const text = await readFile('./archivo.txt', 'utf-8')   
-console.log('primer texto:',text)
+const text = await readFile('./archivo.txt', 'utf-8')
+console.log('primer texto:', text)
 console.log('hacer cosas mientras lees el archivo...')
 
 console.log('Leyendo el segundo archivo...')
-const text2= await readFile('./archivo2.txt', 'utf-8')
-console.log('segundo texto:',text2)
+const text2 = await readFile('./archivo2.txt', 'utf-8')
+console.log('segundo texto:', text2)
